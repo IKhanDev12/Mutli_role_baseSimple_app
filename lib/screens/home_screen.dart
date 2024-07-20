@@ -35,31 +35,31 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Colors.blue,
-        title: Center(child: Text('Home Screen')),
+        title: const Center(child: Text('Home Screen')),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Center(child: Text('Welcome to home screen',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),)),
-          SizedBox(height: 50,),
+          const Center(child: Text('Welcome to home screen',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),)),
+          const SizedBox(height: 50,),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('Email'),
+                const Text('Email'),
                 Text(email.toString()),
               ],
             ),
           ),
-          SizedBox(height: 10,),
+          const SizedBox(height: 10,),
            Padding(
              padding: const EdgeInsets.symmetric(horizontal: 20),
              child: Row(
                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                children: [
-                 Text('Age'),
+                 const Text('Age'),
                  Text(age.toString()),
                ],
              ),
@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
 
 
-          SizedBox(height: 10,),
+          const SizedBox(height: 10,),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: InkWell(
@@ -84,7 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 // print('Stored login status: $isLogin');
 
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => LoginScreen()));
+                    MaterialPageRoute(builder: (context) => const LoginScreen()));
               },
               child: Container(
                 height: 50,
@@ -92,7 +92,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 decoration: BoxDecoration(
                     color: Colors.green,
                     borderRadius: BorderRadius.circular(10)),
-                child: Center(child: Text('Log Out')),
+                child: const Center(child: Text('Log Out')),
               ),
             ),
           )

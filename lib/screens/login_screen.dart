@@ -24,21 +24,21 @@ class _LoginScreenState extends State<LoginScreen> {
           children: [
             TextFormField(
                 controller: emailController,
-                decoration: InputDecoration(hintText: 'Email')),
-            SizedBox(
+                decoration: const InputDecoration(hintText: 'Email')),
+            const SizedBox(
               height: 20,
             ),
             TextFormField(
                 controller: passwordController,
-                decoration: InputDecoration(hintText: 'Passward')),
-            SizedBox(
+                decoration: const InputDecoration(hintText: 'Passward')),
+            const SizedBox(
               height: 20,
             ),
             TextFormField(
                 controller: ageController,
                 keyboardType: TextInputType.number,
-                decoration: InputDecoration(hintText: 'Age')),
-            SizedBox(
+                decoration: const InputDecoration(hintText: 'Age')),
+            const SizedBox(
               height: 40,
             ),
             InkWell(
@@ -57,7 +57,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 // print('Stored login status: $isLogin');
 
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => HomeScreen()));
+                    MaterialPageRoute(builder: (context) => const HomeScreen()));
               },
               child: Container(
                 height: 50,
@@ -65,7 +65,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 decoration: BoxDecoration(
                     color: Colors.green,
                     borderRadius: BorderRadius.circular(10)),
-                child: Center(child: Text('Login')),
+                child: const Center(child: Text('Login')),
               ),
             )
           ],
